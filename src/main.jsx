@@ -12,47 +12,44 @@ import ApplicationProvider from "../src/context/ApplicationContext.jsx";
 
 import "./index.css";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <DashboardLayout />,
+      children: [
+        {
+          index: true,
+          element: <Dashboard />,
+        },
+        {
+          path: "applications",
+          element: <Applications />,
+        },
+        {
+          path: "applications/new",
+          element: <AddApplication />,
+        },
+        {
+          path: "applications/:id",
+          element: <ApplicationDetails />,
+        },
+        {
+          path: "applications/:id/edit",
+          element: <EditApplication />,
+        },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <DashboardLayout />,
-    children: [
-      {
-        index: true,
-        element: <Dashboard />,
-      },
-      {
-        path: "applications",
-        element: <Applications />,
-      },
-      {
-        path: "applications/new",
-        element: <AddApplication />,
-      },
-      {
-        path: "applications/:id",
-        element: <ApplicationDetails />,
-      },
-      {
-        path: "applications/:id/edit",
-        element: <EditApplication />,
-      },
-      {
-        path: "applications/:id",
-        element: <ApplicationDetails />,
-      },
-      {
-        path: "applications/:id/edit",
-        element: <EditApplication />,
-      },
-    ],
-  },
-]);
+    basename: "/Jobtrack",
+  }
+);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ApplicationProvider>
       <RouterProvider router={router} />
     </ApplicationProvider>
-  </StrictMode>,
+  </StrictMode>
 );

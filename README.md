@@ -8,7 +8,7 @@ JobTrack helps users organize job applications, monitor application status, sear
 
 ## 🚀 Live Demo
 
-🔗 **Live Demo:** `YOUR_DEPLOYED_URL`
+🔗 **Live Demo:** `https://taziim.github.io/Jobtrack/applications`
 
 🔗 **GitHub:** `YOUR_GITHUB_REPOSITORY_URL`
 
@@ -20,19 +20,15 @@ JobTrack helps users organize job applications, monitor application status, sear
 
 ### Dashboard
 
-![Dashboard Screenshot](./screenshots/dashboard.png)
+![Dashboard Screenshot](./assets/s1.png)
 
 ### Applications
 
-![Applications Screenshot](./screenshots/applications.png)
-
-### Application Details
-
-![Application Details Screenshot](./screenshots/application-details.png)
+![Applications Screenshot](./assets/s2.png)
 
 ### Add Application
 
-![Add Application Screenshot](./screenshots/add-application.png)
+![Add Application Screenshot](./assets/s3.png)
 
 ---
 
